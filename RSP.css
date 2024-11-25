@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 'Arial', sans-serif;
+    color: white;
+}
+
+.hideUI{
+    display: none;
+}
+
+.mainGameBox{
+    width: 600px;
+    height: 500px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin:100px auto;
+    /* margin: auto; */
+    background-color: rgba(103, 94, 70, 0.792);
+    text-align: center;
+    border-radius: 2%;
+    backdrop-filter: blur(50px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.546);
+}
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 10px 0;
+  }
+.score {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(242, 238, 238, 0.2);
+    font-size: 20px;
+}
+
+.mainGame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yourSide img,.compSide img{
+    width: 250px;
+    height: 300px;
+    margin: 5px;
+}
+.yourScore , .compScore{
+    font-size: 30px;
+}
+.mainGame h3{
+    font-size: 20px;
+    margin: 10px;
+}
+.playBtn{
+    background-color: green;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin:auto;
+    position: absolute;
+    bottom: 2%;
+    left: 42%;
+}
+.playBtn:hover{
+    font-size:17px ;
+    box-shadow: 3px 3px 2px black;
+}
+
+.inputYourTurn{
+    display: flex;
+    width: 500px;
+    height: 40px;
+    z-index: 1;
+}
+.inputYourTurn input{
+    width: 150px;
+    height: 30px;
+    margin-left: 180px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    padding-left:8px;
+    color: black;
+}
+
+.placeBtn{
+    width: 50px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: green;
+}
+.placeBtn:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 255, 4, 0.42);
+}
+
+.winTag{
+    width: 150px;
+    background-color: rgb(1, 186, 32);
+    height: 25px;
+    padding:10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 4%;
+    left: 36%;
+    font-size:20px;
+    border-radius: 100%;
+}
+
+.setGameLimit{
+    display: flex;
+    width: 500px;
+    height: 40px;
+    /* margin-top: 30px; */
+    position: absolute;
+    bottom: 3%;
+    z-index: 0;
+    
+}
+.setGameLimit input{
+    width: 150px;
+    height: 30px;
+    margin-left: 180px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    padding-left:8px;
+    color: black;
+}
+.setBtn{
+    width: 50px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+.setBtn:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 0, 0, 0.42);
+}
+
+.finalResultDiv{
+    display: none;
+    justify-content: center;
+    width: 50%;
+    background-color: rgb(10, 199, 10);
+    margin: auto;
+    font-size: 20px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    box-shadow: 2px 2px 5px black;
+}
+.restartBtn{
+    width: 70px;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    margin: 3px;
+}
+.restartBtn:hover{
+    box-shadow: 2px 2px 5px black;
+}

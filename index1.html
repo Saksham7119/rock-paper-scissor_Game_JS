@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="RSP.css">
+</head>
+<body style="background: linear-gradient(135deg, #2c3e50, #3498db);;">
+<!-- <nav>
+    <h1>Welcome To <span>Rock Paper Scissor </span>Game......</h1>
+</nav> -->
+
+<!-- <div class="scoreTag">
+    <h3>SCOREBOARD</h3>
+</div> -->
+<div class="mainGameBox">
+    <div class="scoreboard">
+        <div class="score player">
+            <h4>Your Score</h4>
+            <h5 class="yourScore">0</h5>
+        </div>
+        <div class="score comp">
+            <h4>Comp Score</h4> 
+            <h5 class="compScore">0</h5>
+        </div>
+    </div>
+
+    <div class="mainGame">
+        <div class="yourSide ">
+            <img src="waiting.png" alt="Waiting To Start" class="yourTurn">
+        </div>
+        <h3>VS</h3>
+        <div class="compSide">
+            <img src="waiting.png" alt="Waiting To Start" class="compTurn">
+        </div>
+    </div>
+    <div class="setGameLimit">
+        <input type="number" placeholder="Set Max Score Limit !!" value="" class="hideUI gameLimiter">
+        <button class="setBtn hideUI">SET</button>
+    </div>
+    <div class="inputYourTurn">
+        <input type="text" placeholder="Enter Your Turn !!" value="" class="userInput hideUI">
+        <button class="placeBtn hideUI">Place</button>
+    </div>
+    <button class="playBtn">Play Game</button>
+    <h4 class="winTag hideUI ">YOU WON !!</h4>
+    <div class="finalResultDiv hideUI">
+        <h4 class="finalResult hideUI">You Won The Game !!</h4>
+        <button class="restartBtn hideUI">Restart</button>
+    </div>
+</div>
+
+
+<script src="RSP.js"></script>
+</body>
+</html>
